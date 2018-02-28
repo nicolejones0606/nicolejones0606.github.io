@@ -1,0 +1,19 @@
+body {
+
+  width: 800px;
+}
+
+.filter {
+  width: 200px;
+  float: left;
+}
+
+.content {
+  float: right;
+  width: 500px;
+}
+
+.content .dynamic {
+  border: 1px solid;
+  padding: 20px;
+}
