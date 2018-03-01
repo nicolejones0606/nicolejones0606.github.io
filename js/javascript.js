@@ -1,34 +1,28 @@
-/****
-In this exercise, we want to decide whether someone can pass various challenges depending on what's in their backpack. We'll store the items in their backpack in an array.
-****/
+// Empty array to hold the profile items
+var profileElements = [];
 
-// Create an empty array to hold the backpack items. We'll start them with a key.
-var backpackContents = [];
-
-
-
-// This just sets up the form interaction -- we'll learn it later. For now, know that everytime the form changes, the function updateBackpack will run.
-var backpackForm = document.getElementById('backpackForm');
-backpackForm.addEventListener('change', updateBackpack, false);
+// Set up the form interaction so that everytime the form changes, the function updateProfile will run.
+var profileForm = document.getElementById('profileForm');
+profileForm.addEventListener('change', updateProfile, false);
 
 /***
 This is code that's going to run when the form changes. We're not quite to the point where we can write it yet, but you can probably get a good sense of what it does.
 ***/
-function updateBackpack(e) {
+function updateProfile(e) {
 
-  var items = document.getElementsByName("items[]");
+  var metrics = document.getElementsByName("metrics[]");
 
   //Remove everything from backpack.
-  backpackContents = [];
+  profileElements = [];
 
   // Loop through the items, and if they're checked, add them to the backpack array.
   for (var i = 0; i < items.length; i++) {
-    if (items[i].checked == true) {
-      backpackContents.push(items[i].value)
+    if (metrics[i].selected == "1 million") {
+      profileElements.push(metrics[i].value)
     }
   }
 
-  console.log(backpackContents);
+  console.log(profileElements);
 
   printItems();
   checkChallenges();
@@ -48,14 +42,14 @@ The following code will run each time the form changes.
 
 function printItems() {
 
-  var itemsMessage = ""
+  var metricsMessage = ""
 
   // Your code here.
 
 
 
   /*** This just updates the page. ***/
-  var itemsMessageElement = document.getElementById('itemsMessage');
+  var metricsMessageElement = document.getElementById('itemsMessage');
   var newItemsMessage = document.createTextNode(itemsMessage);
   itemsMessageElement.innerHTML = "";
   itemsMessageElement.appendChild(newItemsMessage);
@@ -67,7 +61,7 @@ function printItems() {
 
 /**** Now we're going to create some arrays describing the requirements to pass some challenges. ****/
 
-var cakeRequirements = ["Flour","Butter","Sugar"]
+var cakeRequirements = ["1mil","",""]
 
 
 
