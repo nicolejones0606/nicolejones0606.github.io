@@ -1,0 +1,15 @@
+<!---Notes
+
+Interview Questions/Javascript Questions
+  Have you ever witnessed a miracle?
+  How do you know what is real?
+  Have you ever been alone in the wild?
+  Have you ever been without your devices?
+  What was the last thing that shocked you?
+  When was the last time someone broke your trust?
+  How long have you been scrolling this document?
+  What is the largest sum of money you have kept in your wallet at one time?
+  How many followers do you have?
+  How much money is in your bank account right now?
+  Have you ever removed a social media post because you were not happy with the metadata associated with it?
+--->

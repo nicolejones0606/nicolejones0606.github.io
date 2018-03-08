@@ -1,20 +1,4 @@
 <!doctype html>
-<!---Notes
-
-Interview Questions/Javascript Questions
-  Have you ever witnessed a miracle?
-  How do you know what is real?
-  Have you ever been alone in the wild?
-  Have you ever been without your devices?
-  What was the last thing that shocked you?
-  When was the last time someone broke your trust?
-  How long have you been scrolling this document?
-  What is the largest sum of money you have kept in your wallet at one time?
-  How many followers do you have?
-  How much money is in your bank account right now?
-  Have you ever removed a social media post because you were not happy with the metadata associated with it?
---->
-
 <html>
       <head>
           <meta charset="utf-8">
@@ -29,7 +13,6 @@ Interview Questions/Javascript Questions
 
           <!-- Your custom stylesheet -->
           <link href="css/stylesheet.css" rel="stylesheet">
-
           <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
           <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
           <!--[if lt IE 9]>
@@ -39,55 +22,63 @@ Interview Questions/Javascript Questions
 
       </head>
     <body>
-
-      <p>Complete Celebrity Profile</p>
-
-      <form id="profileForm">
-          <label for="net_worth">Net Worth:</label>
-          <select name="net_worth" id="net_worth">
-            <option name="metrics[]" value="1mil">1 million</option>
-            <option name="metrics[]" value="5mil">5 million</option>
-            <option name="metrics[]" value="10mil">10 million</option>
-            <option name="metrics[]" value="50bil">50 billion</option>
-          </select>
-          <br></br>
-          <label for="twitter_followers">Twitter Followers:</label>
-          <select name="twitter_followers" id="twitter_followers">
-            <option value="1mil">1 million</option>
-            <option value="5mil">5 million</option>
-            <option value="10mil">10 million</option>
-            <option value="50bil">50 billion</option>
-          </select>
-          <ul>Do they donate to charity?
-            <li><input type="radio" name="items[]" value="yesdonate">Yes</li>
-            <li><input type="radio" name="items[]" value="nodonate">No</li>
-          </ul>
-        </form>
-
-      <!--<form action="" id="backpackForm">
+      <div class="formTitle">
+        <p>Complete Celebrity Profile</p>
+      </div>
+    <div class="wholeForm">
+        <form action="" id="profileForm">
 
         <ul>
-          <li><input type="checkbox" name="items[]" value="Key">Key</li>
-          <li><input type="checkbox" name="items[]" value="Cheese">Cheese</li>
-          <li><input type="checkbox" name="items[]" value="Flour">Flour</li>
-          <li><input type="checkbox" name="items[]" value="Butter">Butter</li>
-          <li><input type="checkbox" name="items[]" value="String">String</li>
-          <li><input type="checkbox" name="items[]" value="Glue">Glue</li>
-          <li><input type="checkbox" name="items[]" value="Paper">Paper</li>
-          <li><input type="checkbox" name="items[]" value="Sugar">Sugar</li>
-          <li><input type="checkbox" name="items[]" value="Scissors">Scissors</li>
-          <li><input type="checkbox" name="items[]" value="Bread">Bread</li>
-          <li><input type="checkbox" name="items[]" value="Pencil">Pencil</li>
-          <li><input type="checkbox" name="items[]" value="Gun">Gun</li>
+          <div class="charityForm">
+            <li>
+            <label for="donate">Do they personally donate to charity?</label>
+            <ul>
+              <li>
+                <input type="radio" name="donate" value="yesDonate"> Yes, they do donate.
+              </li>
+              <li>
+                <input type="radio" name="donate" value="noDonate"> No, they do not.
+              </li>
+            </ul>
+          </li>
+        </div>
+
+        <div class="netWorthForm">
+            <li>
+            <label for="netWorth">Net Worth:</label>
+            <select name="netWorth" id="netWorth">
+              <option>Select...</option>
+              <option value="100bil">>100 billion USD</option>
+              <option value="50bil">>50 billion USD</option>
+              <option value="1bil">>1 billion USD</option>
+              <option value="100mil">>100 million USD</option>
+            </select>
+          </li>
+        </div>
+        <div class="twitterForm">
+            <li>
+            <label for="twitter">Twitter Followers:</label>
+            <select name="twitter" id="twitter">
+              <option>Select...</option>
+              <option value="49mil">49 million</option>
+              <option value="45mil">45 million</option>
+              <option value="60mil">60 million</option>
+              <option value="42mil">42 million</option>
+            </select>
+          </li>
+        </div>
+        <div class="submitForm">
+          <li>
+            <input type="submit" value="Submit" />
+          </li>
+        </div>
         </ul>
 
-      </form>-->
-
-
-      <p>Your celebrity is:<br/>
-      <span id="celebrityTwitter"></span></p>
-
-      <p id="challengeMessage"></p>
+      </form>
+    </div>
+    <div class="content">
+        <div class="dynamic"></div>
+      </div>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->

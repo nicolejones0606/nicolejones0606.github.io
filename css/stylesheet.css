@@ -1,6 +1,10 @@
 body {
-
+  background-color: #EEE;
+  font-family: Apercu, Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   width: 800px;
+  margin-left: 50px;
 }
 
 .filter {
@@ -16,4 +20,70 @@ body {
 .content .dynamic {
   border: 1px solid;
   padding: 20px;
+  border-radius: 25px;
+}
+
+form ul {
+	padding: 1em 0;
+}
+
+form ul li {
+	list-style-type: none;
+	padding: 0 0 1em 0;
+}
+.formTitle {
+  background-color: #D5D8DC;
+  color: #FF337A;
+  text-align: center;
+  border-radius: 25px;
+  padding: 25px;
+  border: 1px solid;
+  border-color: blue;
+  border-spacing: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.wholeForm {
+  background: linear-gradient(#D5D8DC, white);
+  color: #FF337A;
+  border-radius: 25px;
+  padding: 25px;
+  border: 1px solid;
+  border-color: blue;
+  margin-bottom: 25px;
+}
+
+.charityForm {
+  background-color: #D5D8DC;
+  color: #FF337A;
+  border-radius: 25px;
+  padding: 50px;
+  border: 1px solid;
+  border-color: blue;
+  margin-bottom: 25px;
+}
+
+.netWorthForm {
+  background-color: #D5D8DC;
+  color: #FF337A;
+  border-radius: 25px;
+  padding: 50px;
+  border: 1px solid;
+  border-color: blue;
+  margin-bottom: 25px;
+}
+
+.twitterForm {
+  background-color: #D5D8DC;
+  color: #FF337A;
+  border-radius: 25px;
+  padding: 50px;
+  border: 1px solid;
+  border-color: blue;
+  margin-bottom: 25px;
+}
+
+.submitForm {
+
 }
